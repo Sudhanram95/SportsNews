@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white">
+
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/profile"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_player_pic"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_player_pic"
+                    android:text="Sudhan"
+                    android:id="@+id/txt_first_name"
+                    android:textColor="@color/mild_grey"
+                    android:layout_marginLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_first_name"
+                    android:text="Ram"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:id="@+id/txt_last_name"
+                    android:layout_toRightOf="@id/img_player_pic"
+                    android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lakers"
+                        android:id="@+id/txt_team"
+                        android:textColor="@color/mild_grey"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#14"
+                        android:layout_gravity="end"
+                        android:id="@+id/txt_team_id"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_grey"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/mild_grey">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Position-F"
+                    android:gravity="center"
+                    android:id="@+id/txt_position"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Position-F"
+                    android:gravity="center"
+                    android:id="@+id/txt_team_full_name"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Position-F"
+                    android:gravity="center"
+                    android:id="@+id/txt_region"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
